@@ -1,0 +1,22 @@
+img {
+	display:block;
+    width: 400px;
+    height: 320px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+h1 {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+    background-color: purple;
+}
+
+header {
+	background-color: blue;
+	color:purple;
+}

@@ -4,15 +4,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login page</title>
-	<link rel="stylesheet" href="">
+	<link rel="STYLESHEET" type="text/css" href="file.css"></link> 
 </head>
 <body>
-	<h1>Hello: <strong style = "color: blue"><%= session[:user] %></strong></h1>
 
-	<hr>
-	<form action="/logout" method="POST">
+	<header><h1>My little dog Lluna</h1> <h2>Hello: <strong style = "color: blue text-align:right"><%= session[:user] %></strong></h2><form action="/logout" method="POST">
 	<button type="submit">Logout</button>
-	</form>
+	</form></header>
+
+		<p><img src="/lluna1.jpg" alt="A very cool image of my dog"></p>
+		<p><img src="/lluna2.jpg" alt="Another very cool image of my dog"></p>
+
+		<hr>
 	
 </body>
 </html>

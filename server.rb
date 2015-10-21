@@ -15,7 +15,6 @@ get "/session_test/:text" do
 end
 
 get "/" do
-	
 	erb :init
 end
 
@@ -46,9 +45,13 @@ end
 
 post "/logout" do
 	session.clear
-	redirect "/profile"
+	redirect "/"
 end
 
 get "/profile" do
-	erb :profile
+	if session[:user]
+		erb :profile
+	else 
+		redirect '/'
+	end
 end
