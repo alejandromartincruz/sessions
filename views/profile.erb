@@ -8,7 +8,8 @@
 </head>
 <body>
 
-	<header><h1>My little dog Lluna</h1> <h2>Hello: <strong style = "color: blue text-align:right"><%= session[:user] %></strong></h2><form action="/logout" method="POST">
+	<header><h1 style = "text-align:center">My little dog Lluna</h1> <h2 style = "text-align:right" >Hello: <strong><%= session[:user] %></strong></h2>
+	<form action="/logout" method="POST" style = "text-align:right">
 	<button type="submit">Logout</button>
 	</form></header>
 
