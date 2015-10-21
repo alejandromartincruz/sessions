@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sessions test exercise</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+	<h1>User Login</h1>
+	<form action="/sessions" method="POST">
+	<input type="email" placeholder="email@domain.com" name="email"> <br>
+	<input type="password" placeholder="password" name="password">
+	<button type="submit">Login</button>
+	</form>
+
+	<hr>
+
+	<h1><%= @log %></h1>
+	
+</body>
+</html>
